@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Message Was Sent!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap" rel="stylesheet" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .sent-message {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2f2f2;
+        padding: 40px;
+      }
+      h1 {
+        font-family: "Work Sans", sans-serif;
+        font-size: 2.25rem;
+        font-weight: 800;
+        color: #23272a;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sent-message">
+      <h1>Thank you! Your message has been successfully sent.</h1>
+    </div>
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          window.location.href = window.location.href.replace("sent.html", "#contact");
+        }, 4000);
+      });
+    </script>
+  </body>
+</html>
